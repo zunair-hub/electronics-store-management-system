@@ -1,0 +1,114 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="DgEad4es9qfgjIIzqs32">
+    <mxGraphModel dx="1174" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DGwKifr6GpFwUhS9LraO-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":Admin" vertex="1">
+          <mxGeometry height="300" width="90" x="10" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-2" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;pre class=&quot;overflow-visible! px-0!&quot; data-start=&quot;376&quot; data-end=&quot;425&quot;&gt;&lt;div class=&quot;relative w-full mt-4 mb-1&quot;&gt;&lt;div class=&quot;&quot;&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;h-full min-h-0 min-w-0&quot;&gt;&lt;div class=&quot;h-full min-h-0 min-w-0&quot;&gt;&lt;div class=&quot;border border-token-border-light border-radius-3xl corner-superellipse/1.1 rounded-3xl&quot;&gt;&lt;div class=&quot;h-full w-full border-radius-3xl bg-token-bg-elevated-secondary corner-superellipse/1.1 overflow-clip rounded-3xl lxnfua_clipPathFallback&quot;&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;pe-11 pt-3&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;pre class=&quot;cm-content q9tKkq_readonly m-0&quot; style=&quot;text-align: center;&quot;&gt;&lt;code&gt;&lt;span&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Sequence Diagram - Admin Adds Product&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;&quot;&gt;&lt;div class=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="280" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":React Frontend" vertex="1">
+          <mxGeometry height="300" width="100" x="160" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":Express&lt;div&gt;Backend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="100" x="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":JWT&amp;nbsp;&lt;div&gt;Middleware&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="100" x="460" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-6" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":Product Controller" vertex="1">
+          <mxGeometry height="300" width="100" x="590" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value=":MongoDB Database" vertex="1">
+          <mxGeometry height="300" width="100" x="730" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-13" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Enter product details">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="167" />
+            </Array>
+            <mxPoint x="54.5" y="167" as="sourcePoint" />
+            <mxPoint x="209.5" y="167" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-14" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="POST /api/products">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="255" y="186" />
+            </Array>
+            <mxPoint x="209.5" y="186" as="sourcePoint" />
+            <mxPoint x="349.5" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Verify token and admin role">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="206" />
+            </Array>
+            <mxPoint x="349.5" y="206" as="sourcePoint" />
+            <mxPoint x="509.5" y="206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-16" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Authorised">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="455.5" y="233" />
+            </Array>
+            <mxPoint x="509.5" y="233" as="sourcePoint" />
+            <mxPoint x="349.5" y="233" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Create product request">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="260" />
+            </Array>
+            <mxPoint x="509.5" y="260" as="sourcePoint" />
+            <mxPoint x="639.5" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-18" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Save product">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="639.5" y="284" as="sourcePoint" />
+            <mxPoint x="779.5" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-19" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Product saved">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="779.5" y="316" as="sourcePoint" />
+            <mxPoint x="639.5" y="316" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-20" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Return saved product">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="639.5" y="340" as="sourcePoint" />
+            <mxPoint x="349.5" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-21" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="201 Created response">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="349.5" y="365" as="sourcePoint" />
+            <mxPoint x="209.5" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-22" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="Display updated product list">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="209.5" y="385" as="sourcePoint" />
+            <mxPoint x="54.5" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DGwKifr6GpFwUhS9LraO-26" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If token is invalid or user role is not admin, backend returns 403 Access Denied.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="360" y="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
