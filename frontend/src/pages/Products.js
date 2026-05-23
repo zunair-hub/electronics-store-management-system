@@ -1,10 +1,11 @@
 import Header from "../components/Header";
+import ProductForm from "../components/ProductForm";
 
 function Products() {
   return (
     <div>
       <Header />
-      <h2>Products Page</h2>
+      <ProductForm />
     </div>
   );
 }
