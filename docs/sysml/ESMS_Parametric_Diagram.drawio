@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="2e3QdYPvy7ySVqzAakHp">
+    <mxGraphModel dx="2527" dy="1019" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-1" parent="1" style="text;whiteSpace=wrap;align=center;fontStyle=1;fontSize=15;" value="Parametric Diagram - ESMS Validation and Access Constraints" vertex="1">
+          <mxGeometry height="40" width="470" x="200" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-2" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="114" width="240" x="280" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-3" parent="5S2_NpsNCk4JiKRdSuAz-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;/span&gt;&lt;div&gt;Electronics Store Management System&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-4" parent="5S2_NpsNCk4JiKRdSuAz-2" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-6" parent="5S2_NpsNCk4JiKRdSuAz-2" style="html=1;align=center;spacing=0;spacingLeft=8;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;" value="Web-based Application for managing electronics products, users, and admin CRUD operations." vertex="1">
+          <mxGeometry height="56" width="240" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-7" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="114" width="250" x="520" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-8" parent="5S2_NpsNCk4JiKRdSuAz-7" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;constraint&amp;gt;&amp;gt;&lt;/span&gt;&lt;div&gt;Admin Access Constraint&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-9" parent="5S2_NpsNCk4JiKRdSuAz-7" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-10" parent="5S2_NpsNCk4JiKRdSuAz-7" style="html=1;align=center;spacing=0;spacingLeft=8;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;" value="userRole = admin" vertex="1">
+          <mxGeometry height="56" width="250" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-11" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="114" width="250" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-12" parent="5S2_NpsNCk4JiKRdSuAz-11" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;constraint&amp;gt;&amp;gt;&lt;/span&gt;&lt;div&gt;JWT Validation Constraint&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-13" parent="5S2_NpsNCk4JiKRdSuAz-11" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-14" parent="5S2_NpsNCk4JiKRdSuAz-11" style="html=1;align=center;spacing=0;spacingLeft=8;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;" value="validToken = true" vertex="1">
+          <mxGeometry height="56" width="250" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-15" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="114" width="250" x="30" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-16" parent="5S2_NpsNCk4JiKRdSuAz-15" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;constraint&amp;gt;&amp;gt;&lt;/span&gt;&lt;div&gt;Product Price Contraint&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-17" parent="5S2_NpsNCk4JiKRdSuAz-15" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-18" parent="5S2_NpsNCk4JiKRdSuAz-15" style="html=1;align=center;spacing=0;spacingLeft=8;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;" value="price &amp;gt; 0" vertex="1">
+          <mxGeometry height="56" width="250" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-19" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="114" width="250" x="520" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-20" parent="5S2_NpsNCk4JiKRdSuAz-19" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;lt;&amp;lt;constraint&amp;gt;&amp;gt;&lt;/span&gt;&lt;div&gt;Product Quantity Constraint&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-21" parent="5S2_NpsNCk4JiKRdSuAz-19" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-22" parent="5S2_NpsNCk4JiKRdSuAz-19" style="html=1;align=center;spacing=0;spacingLeft=8;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;" value="quantity &amp;gt; 0" vertex="1">
+          <mxGeometry height="56" width="250" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-23" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="5S2_NpsNCk4JiKRdSuAz-6" value="validates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-24" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="5S2_NpsNCk4JiKRdSuAz-6" value="validates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-30" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="5S2_NpsNCk4JiKRdSuAz-6" value="constrains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-31" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="5S2_NpsNCk4JiKRdSuAz-6" value="constrains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-34" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="144" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-32" parent="1" style="shape=rect;html=1;overflow=fill;whiteSpace=wrap;align=center;" value="&lt;p&gt;&amp;lt;&amp;lt;value&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;token&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="53" width="110" x="-130" y="117" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-33" parent="1" style="shape=rect;html=1;overflow=fill;whiteSpace=wrap;align=center;" value="&lt;p&gt;&amp;lt;&amp;lt;value&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;userRole&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="53" width="110" x="820" y="120.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-35" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="143" as="sourcePoint" />
+            <mxPoint x="820" y="143" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-39" parent="1" style="shape=rect;html=1;overflow=fill;whiteSpace=wrap;align=center;" value="&lt;p&gt;&amp;lt;&amp;lt;value&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;price&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="53" width="110" x="-130" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-40" parent="1" style="shape=rect;html=1;overflow=fill;whiteSpace=wrap;align=center;" value="&lt;p&gt;&amp;lt;&amp;lt;value&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;quantity&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="53" width="110" x="820" y="510.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-41" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.223;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="5S2_NpsNCk4JiKRdSuAz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-42" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-40" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.999;entryY=-0.026;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="5S2_NpsNCk4JiKRdSuAz-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontStyle=1;fontSize=15;" value="Notes:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;These constraints define the rules and conditions that must be satisfied in the ESMS.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;They ensure data quality, security, and proper role-based access.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="380" x="-130" y="650" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
