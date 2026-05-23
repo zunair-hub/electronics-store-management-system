@@ -3,6 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const productRoutes = require("./routes/productRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 dotenv.config();
 
@@ -13,7 +14,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
+
 
 app.get("/", (req, res) => {
   res.send("Electronics Store Management Backend Running");
