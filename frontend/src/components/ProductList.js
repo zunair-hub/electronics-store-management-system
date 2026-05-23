@@ -1,22 +1,24 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import API from "../services/api";
+import SearchBar from "./SearchBar";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
   const [editingProduct, setEditingProduct] = useState(null);
+  const [search, setSearch] = useState("");
 
-  const fetchProducts = async () => {
+  const fetchProducts = useCallback(async () => {
     try {
-      const response = await API.get("/products");
+      const response = await API.get(`/products?search=${search}`);
       setProducts(response.data);
     } catch (error) {
       console.log("Error fetching products");
     }
-  };
+  }, [search]);
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [fetchProducts]);
 
   const deleteProduct = async (id) => {
     try {
@@ -34,9 +36,7 @@ function ProductList() {
   const updateProduct = async () => {
     try {
       await API.put(`/products/${editingProduct._id}`, editingProduct);
-
       setEditingProduct(null);
-
       fetchProducts();
     } catch (error) {
       console.log("Error updating product");
@@ -46,6 +46,8 @@ function ProductList() {
   return (
     <div className="product-list">
       <h2>Product List</h2>
+
+      <SearchBar search={search} setSearch={setSearch} />
 
       <table border="1" cellPadding="10">
         <thead>
@@ -97,6 +99,7 @@ function ProductList() {
               <td>
                 {editingProduct?._id === product._id ? (
                   <input
+                    type="number"
                     value={editingProduct.price}
                     onChange={(e) =>
                       setEditingProduct({
@@ -113,6 +116,7 @@ function ProductList() {
               <td>
                 {editingProduct?._id === product._id ? (
                   <input
+                    type="number"
                     value={editingProduct.quantity}
                     onChange={(e) =>
                       setEditingProduct({
