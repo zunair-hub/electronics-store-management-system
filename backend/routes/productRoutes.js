@@ -8,16 +8,14 @@ const {
   deleteProduct,
 } = require("../controllers/productController");
 
-// Get all products and search products
+const { protect, adminOnly } = require("../middleware/authMiddleware");
+
+// Public route: users and admins can view/search products
 router.get("/", getProducts);
 
-// Add new product
-router.post("/", addProduct);
-
-// Update product
-router.put("/:id", updateProduct);
-
-// Delete product
-router.delete("/:id", deleteProduct);
+// Protected admin routes
+router.post("/", protect, adminOnly, addProduct);
+router.put("/:id", protect, adminOnly, updateProduct);
+router.delete("/:id", protect, adminOnly, deleteProduct);
 
 module.exports = router;
