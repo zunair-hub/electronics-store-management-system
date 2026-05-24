@@ -1,0 +1,20 @@
+name: Test Self Hosted Runner
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Confirm runner is working
+        run: |
+          echo "Self-hosted runner is working"
+          pwd
+          ls
