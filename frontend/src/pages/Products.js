@@ -3,11 +3,13 @@ import ProductForm from "../components/ProductForm";
 import ProductList from "../components/ProductList";
 
 function Products() {
+  const role = localStorage.getItem("role");
+
   return (
     <div>
       <Header />
 
-      <ProductForm />
+      {role === "admin" && <ProductForm />}
 
       <ProductList />
     </div>

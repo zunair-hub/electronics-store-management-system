@@ -6,6 +6,7 @@ function ProductList() {
   const [products, setProducts] = useState([]);
   const [editingProduct, setEditingProduct] = useState(null);
   const [search, setSearch] = useState("");
+  const role = localStorage.getItem("role");
 
   const fetchProducts = useCallback(async () => {
     try {
@@ -57,7 +58,7 @@ function ProductList() {
             <th>Price</th>
             <th>Quantity</th>
             <th>Description</th>
-            <th>Actions</th>
+            {role === "admin" && <th>Actions</th>}
           </tr>
         </thead>
 
@@ -146,17 +147,20 @@ function ProductList() {
                 )}
               </td>
 
-              <td>
-                {editingProduct?._id === product._id ? (
-                  <button onClick={updateProduct}>Update</button>
-                ) : (
-                  <button onClick={() => startEdit(product)}>Edit</button>
-                )}
+              
+              {role === "admin" && (
+                  <td>
+                    {editingProduct?._id === product._id ? (
+                      <button onClick={updateProduct}>Update</button>
+                    ) : (
+                      <button onClick={() => startEdit(product)}>Edit</button>
+                    )}
 
-                <button onClick={() => deleteProduct(product._id)}>
-                  Delete
-                </button>
-              </td>
+                    <button onClick={() => deleteProduct(product._id)}>
+                      Delete
+                    </button>
+                  </td>
+                )}
             </tr>
           ))}
         </tbody>
