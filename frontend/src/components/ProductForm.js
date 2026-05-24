@@ -38,6 +38,10 @@ function ProductForm({ fetchProducts }) {
 
       setMessage("Product added successfully.");
 
+        setTimeout(() => {
+          setMessage("");
+        }, 3000);
+
       setProduct({
         name: "",
         category: "",
@@ -55,10 +59,10 @@ function ProductForm({ fetchProducts }) {
   };
 
   return (
-    <div className="form-container">
+    <div className="product-form">
       <h2>Add Product</h2>
 
-      {message && <p>{message}</p>}
+      {message && <p className="success-message">{message}</p>}
 
       <form onSubmit={addProduct}>
         <input

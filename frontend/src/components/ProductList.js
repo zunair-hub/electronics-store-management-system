@@ -1,32 +1,36 @@
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import API from "../services/api";
 import SearchBar from "./SearchBar";
 
-function ProductList() {
-  const [products, setProducts] = useState([]);
+function ProductList({ products, fetchProducts, search, setSearch }) {
   const [editingProduct, setEditingProduct] = useState(null);
-  const [search, setSearch] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState("");
+
   const role = localStorage.getItem("role");
 
-  const fetchProducts = useCallback(async () => {
-    try {
-      const response = await API.get(`/products?search=${search}`);
-      setProducts(response.data);
-    } catch (error) {
-      console.log("Error fetching products");
-    }
-  }, [search]);
-
-  useEffect(() => {
-    fetchProducts();
-  }, [fetchProducts]);
-
   const deleteProduct = async (id) => {
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this product?"
+    );
+
+    if (!confirmDelete) return;
+
     try {
       await API.delete(`/products/${id}`);
+
+      setMessage("Product deleted successfully.");
+      setMessageType("error");
+
       fetchProducts();
+
+      setTimeout(() => {
+        setMessage("");
+        setMessageType("");
+      }, 3000);
     } catch (error) {
-      console.log("Error deleting product");
+      setMessage("Error deleting product. Please try again.");
+      setMessageType("error");
     }
   };
 
@@ -37,10 +41,20 @@ function ProductList() {
   const updateProduct = async () => {
     try {
       await API.put(`/products/${editingProduct._id}`, editingProduct);
+
+      setMessage("Product updated successfully.");
+      setMessageType("success");
+
       setEditingProduct(null);
       fetchProducts();
+
+      setTimeout(() => {
+        setMessage("");
+        setMessageType("");
+      }, 3000);
     } catch (error) {
-      console.log("Error updating product");
+      setMessage("Error updating product. Please try again.");
+      setMessageType("error");
     }
   };
 
@@ -49,6 +63,16 @@ function ProductList() {
       <h2>Product List</h2>
 
       <SearchBar search={search} setSearch={setSearch} />
+
+      {message && (
+        <p
+          className={
+            messageType === "success" ? "success-message" : "error-message"
+          }
+        >
+          {message}
+        </p>
+      )}
 
       <table border="1" cellPadding="10">
         <thead>
@@ -147,20 +171,29 @@ function ProductList() {
                 )}
               </td>
 
-              
               {role === "admin" && (
-                  <td>
-                    {editingProduct?._id === product._id ? (
-                      <button onClick={updateProduct}>Update</button>
-                    ) : (
-                      <button onClick={() => startEdit(product)}>Edit</button>
-                    )}
-
-                    <button onClick={() => deleteProduct(product._id)}>
-                      Delete
+                <td>
+                  {editingProduct?._id === product._id ? (
+                    <button className="update-btn" onClick={updateProduct}>
+                      Update
                     </button>
-                  </td>
-                )}
+                  ) : (
+                    <button
+                      className="edit-btn"
+                      onClick={() => startEdit(product)}
+                    >
+                      Edit
+                    </button>
+                  )}
+
+                  <button
+                    className="delete-btn"
+                    onClick={() => deleteProduct(product._id)}
+                  >
+                    Delete
+                  </button>
+                </td>
+              )}
             </tr>
           ))}
         </tbody>

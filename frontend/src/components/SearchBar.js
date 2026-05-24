@@ -1,6 +1,6 @@
 function SearchBar({ search, setSearch }) {
   return (
-    <div className="search-container">
+    <div className="search-bar">
       <input
         type="text"
         placeholder="Search products..."
