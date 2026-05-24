@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="YCplghx2_SL0IPwCURLZ">
+    <mxGraphModel dx="1174" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-1" parent="1" style="text;whiteSpace=wrap;align=center;fontStyle=1;fontSize=18;" value="State Machine Diagram - Product Lifecycle" vertex="1">
+          <mxGeometry height="40" width="440" x="390" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-8" edge="1" parent="1" source="-HYhEA3xI5iRSgkwmh1K-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-HYhEA3xI5iRSgkwmh1K-3" value="Add Product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-2" parent="1" style="shape=ellipse;html=1;fillColor=strokeColor;strokeWidth=2;verticalLabelPosition=bottom;verticalAlignment=top;perimeter=ellipsePerimeter;" value="Start" vertex="1">
+          <mxGeometry height="40" width="40" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-9" edge="1" parent="1" source="-HYhEA3xI5iRSgkwmh1K-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-HYhEA3xI5iRSgkwmh1K-4" value="Save Product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-3" parent="1" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;" value="&lt;b&gt;Created&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Product has been added by admin.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-10" edge="1" parent="1" source="-HYhEA3xI5iRSgkwmh1K-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-HYhEA3xI5iRSgkwmh1K-5" value="Edit Product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-4" parent="1" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;" value="&lt;b&gt;Available&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Product is visible in&amp;nbsp;&lt;/div&gt;&lt;div&gt;product list.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="440" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-11" edge="1" parent="1" source="-HYhEA3xI5iRSgkwmh1K-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-HYhEA3xI5iRSgkwmh1K-6" value="Delete Product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-12" edge="1" parent="1" source="-HYhEA3xI5iRSgkwmh1K-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="-HYhEA3xI5iRSgkwmh1K-4" value="Update Saved">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="240" />
+              <mxPoint x="520" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-5" parent="1" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;fontStyle=1" value="Updated&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Admin modified product details.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="700" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-6" parent="1" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;fontStyle=1" value="Removed&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Product deleted&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;from system.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="960" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-7" parent="1" style="html=1;shape=mxgraph.sysml.actFinal;strokeWidth=2;verticalLabelPosition=bottom;verticalAlignment=top;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="1160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-13" edge="1" parent="1" source="-HYhEA3xI5iRSgkwmh1K-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="-HYhEA3xI5iRSgkwmh1K-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-HYhEA3xI5iRSgkwmh1K-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontStyle=1" value="Notes&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Electronics Store Management System (ESMS).&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;This state machine represents the lifecycle of a Product in ESMS.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;It maps directly to CRUD operations performed by the admin.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Product can be updated multiple times and becomes available again.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;When deleted, product moved to remove state and the lifecycle ends.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="460" x="700" y="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
