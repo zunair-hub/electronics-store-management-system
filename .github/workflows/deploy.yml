@@ -1,4 +1,4 @@
-name: Test Self Hosted Runner
+name: Deploy ESMS Application
 
 on:
   push:
@@ -6,15 +6,43 @@ on:
       - main
 
 jobs:
-  test:
+  deploy:
     runs-on: self-hosted
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Confirm runner is working
+      - name: Install backend dependencies
         run: |
-          echo "Self-hosted runner is working"
-          pwd
-          ls
+          cd backend
+          npm install
+
+      - name: Restart backend with PM2
+        run: |
+          cd backend
+          pm2 restart backend || pm2 start server.js --name backend
+
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm install
+
+      - name: Build frontend
+        run: |
+          cd frontend
+          npm run build
+
+      - name: Restart frontend with PM2
+        run: |
+          cd frontend
+          pm2 delete frontend || true
+          pm2 serve build 3000 --name frontend --spa
+
+      - name: Save PM2 processes
+        run: |
+          pm2 save
+
+      - name: Show PM2 status
+        run: |
+          pm2 status
