@@ -1,70 +1,316 @@
-# Getting Started with Create React App
+# Electronics Store Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+The Electronics Store Management System is a web-based application developed to manage electronic products through separate administrator and user interfaces. The application provides user authentication, role-based access control, product management, product search functionality, cloud database integration, and automated deployment capabilities.
 
-In the project directory, you can run:
+The project was developed as part of IFQ636 Software Lifecycle Management and demonstrates the application of software design, Agile project management, cloud deployment, and CI/CD practices.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### User Features
 
-### `npm test`
+* User registration
+* User login and logout
+* View available products
+* Search products
+* User dashboard access
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Administrator Features
 
-### `npm run build`
+* Administrator login
+* Add products
+* Edit products
+* Delete products
+* View products
+* Search products
+* Admin dashboard access
+* Role-based access control
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Deployment Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* AWS EC2 deployment
+* MongoDB Atlas integration
+* GitHub Actions CI/CD pipeline
+* Self-hosted GitHub Runner
+* PM2 process management
+* Nginx reverse proxy configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Technology Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React JS
+* React Router
+* Axios
+* CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Node.js
+* Express.js
+* JWT Authentication
+* Mongoose
 
-## Learn More
+### Database
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* MongoDB Atlas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deployment & DevOps
 
-### Code Splitting
+* AWS EC2 (Ubuntu)
+* GitHub Actions
+* Self-hosted GitHub Runner
+* PM2
+* Nginx
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```text
+electronics-store-management-system
 
-### Making a Progressive Web App
+├── frontend
+│   ├── public
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   └── styles
+│   └── package.json
+│
+├── backend
+│   ├── config
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── server.js
+│   └── package.json
+│
+├── .github
+│   └── workflows
+│       └── deploy.yml
+│
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Installation Guide
 
-### Advanced Configuration
+### Clone Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git clone https://github.com/zunair-hub/electronics-store-management-system.git
 
-### Deployment
+cd electronics-store-management-system
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Backend Setup
 
-### `npm run build` fails to minify
+```bash
+cd backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm install
+```
+
+### Frontend Setup
+
+```bash
+cd ../frontend
+
+npm install
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file inside the backend folder.
+
+```env
+PORT=5001
+
+MONGO_URI=your_mongodb_atlas_connection_string
+
+JWT_SECRET=your_jwt_secret
+```
+
+Replace the values above with your own MongoDB Atlas connection string and JWT secret key.
+
+---
+
+## Running the Application
+
+### Start Backend
+
+```bash
+cd backend
+
+npm start
+```
+
+Backend runs on:
+
+```text
+http://localhost:5001
+```
+
+### Start Frontend
+
+```bash
+cd frontend
+
+npm start
+```
+
+Frontend runs on:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Application Access
+
+The application is deployed using an AWS EC2 public IP address.
+
+Current deployment URL:
+
+```text
+http://13.236.117.26
+```
+
+The EC2 instance used for this project is hosted within the university AWS environment. If the instance is stopped or restarted, AWS may assign a new public IP address.
+
+If a new public IP is assigned, update the frontend API configuration file:
+
+```text
+frontend/src/services/api.js
+```
+
+Example:
+
+```javascript
+import axios from "axios";
+
+const API = axios.create({
+  baseURL: "http://<NEW_PUBLIC_IP>:5001/api",
+});
+
+export default API;
+```
+
+After updating the IP address, commit and push the changes to GitHub. The GitHub Actions workflow will automatically redeploy the application.
+
+---
+
+## Deployment Architecture
+
+The deployment environment consists of:
+
+* AWS EC2 Ubuntu Server
+* MongoDB Atlas Database
+* GitHub Repository
+* GitHub Actions CI/CD Workflow
+* Self-hosted GitHub Runner
+* PM2 Process Manager
+* Nginx Reverse Proxy
+
+Deployment workflow:
+
+1. Developer pushes code to GitHub.
+2. GitHub Actions workflow is triggered.
+3. Self-hosted runner executes deployment tasks.
+4. Application files are updated on AWS EC2.
+5. PM2 restarts frontend and backend services.
+6. Updated application becomes available through the EC2 public IP.
+
+---
+
+## Test Accounts
+
+### Administrator Account
+
+Email: [admin@test.com](mailto:admin@test.com)
+
+Password: admin123
+
+### Standard User Account
+
+Email: [user@test.com](mailto:user@test.com)
+
+Password: user123
+
+---
+
+## Testing Performed
+
+The following functionality was tested:
+
+* User registration
+* User login
+* User logout
+* JWT authentication
+* Role-based access control
+* Product creation
+* Product update
+* Product deletion
+* Product retrieval
+* Product search
+* Dashboard access
+* Database connectivity
+* Cloud deployment
+* GitHub Actions workflow execution
+* CI/CD deployment automation
+
+---
+
+## Software Design and Project Management
+
+The project was designed using Draw.io and managed using JIRA.
+
+Artifacts created include:
+
+* Requirement Diagram
+* Use Case Diagram
+* Activity Diagram
+* Sequence Diagram
+* Block Definition Diagram
+* Internal Block Diagram
+* Package Diagram
+* Parametric Diagram
+* State Machine Diagram
+
+Agile project management was implemented through:
+
+* Epics
+* User Stories
+* Subtasks
+* Sprint Planning
+* Sprint Tracking
+
+---
+
+## Repository Information
+
+GitHub Repository:
+
+https://github.com/zunair-hub/electronics-store-management-system
+
+---
+
+## Author
+
+Zunair Zafar
+n12904210@qut.edu.au
+zunairmuhammad.zafar@connect.qut.edu.au
+
+IFQ636 Software Lifecycle Management
+
+Queensland University of Technology (QUT), 2026
