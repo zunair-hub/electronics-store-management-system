@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="BTO_uYw5aWH3qU8TgDXC">
-    <mxGraphModel dx="2231" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2223" dy="1803" grid="1" gridSize="11" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="L-3jBJipl8ZmOTjhxZpI-1" parent="1" style="text;whiteSpace=wrap;fontStyle=1;fontSize=20;align=center;" value="Block Definition Diagram - ESMS System Structure" vertex="1">
-          <mxGeometry height="40" width="550" x="80" y="20" as="geometry" />
+        <mxCell id="L-3jBJipl8ZmOTjhxZpI-1" parent="1" style="text;whiteSpace=wrap;fontStyle=1;fontSize=15;align=center;" value="Main components of the system, including the frontend, backend, database, and deployment environment. It provides a high-level view of the system architecture." vertex="1">
+          <mxGeometry height="40" width="1160" x="-175" y="-7" as="geometry" />
         </mxCell>
         <mxCell id="L-3jBJipl8ZmOTjhxZpI-7" parent="1" style="html=1;shape=mxgraph.sysml.package;html=1;overflow=fill;whiteSpace=wrap;labelX=335;" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:10px;text-align:left;&quot;&gt;&lt;b&gt;bdd [Package] Electronics Store Management System&lt;/b&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="830" width="1130" x="-160" y="70" as="geometry" />
@@ -289,6 +289,12 @@
         </mxCell>
         <mxCell id="L-3jBJipl8ZmOTjhxZpI-190" edge="1" parent="1" source="L-3jBJipl8ZmOTjhxZpI-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="L-3jBJipl8ZmOTjhxZpI-111">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N0m5bWuQTSjMSEvVjg6B-2" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(18, 18, 18); font-family: Helvetica; font-size: 23px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(211, 213, 214); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Block Definition Diagram - ESMS System Structure&lt;/span&gt;" vertex="1">
+          <mxGeometry height="77" width="561" x="159" y="-44" as="geometry" />
+        </mxCell>
+        <mxCell id="N0m5bWuQTSjMSEvVjg6B-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="902" y="-132" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

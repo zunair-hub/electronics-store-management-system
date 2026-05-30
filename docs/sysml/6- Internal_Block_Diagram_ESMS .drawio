@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="6uk72q053u4ZeZUYTTX4">
-    <mxGraphModel dx="2656" dy="2197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1880" dy="1627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry height="1290" width="1180" x="-640" y="80" as="geometry" />
         </mxCell>
         <mxCell id="pVZbyJP0hCl3LYrcAqHj-1" parent="1" style="text;whiteSpace=wrap;fontStyle=1;align=center;fontSize=25;" value="Internal Block Diagram - ESMS Component Communication" vertex="1">
-          <mxGeometry height="50" width="750" x="-420" y="-80" as="geometry" />
+          <mxGeometry height="60" width="750" x="-460" y="-130" as="geometry" />
         </mxCell>
         <mxCell id="pVZbyJP0hCl3LYrcAqHj-2" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
           <mxGeometry height="360" width="210" x="-530" y="170" as="geometry" />
@@ -168,6 +168,9 @@
         </mxCell>
         <mxCell id="pVZbyJP0hCl3LYrcAqHj-80" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;Electronics Store Management System&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="600" x="-395" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vmwrzmztQi3EjZAeau6i-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;System components interact with each other and how data flows between the frontend, backend, database, and deployment environment.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="1240" x="-680" y="-80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="2e3QdYPvy7ySVqzAakHp">
-    <mxGraphModel dx="2527" dy="1019" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2138" dy="1759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="5S2_NpsNCk4JiKRdSuAz-1" parent="1" style="text;whiteSpace=wrap;align=center;fontStyle=1;fontSize=15;" value="Parametric Diagram - ESMS Validation and Access Constraints" vertex="1">
-          <mxGeometry height="40" width="470" x="200" y="10" as="geometry" />
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-1" parent="1" style="text;whiteSpace=wrap;align=center;fontStyle=1;fontSize=19;" value="Parametric Diagram - ESMS Validation and Access Constraints" vertex="1">
+          <mxGeometry height="40" width="600" x="120" y="-30" as="geometry" />
         </mxCell>
         <mxCell id="5S2_NpsNCk4JiKRdSuAz-2" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
           <mxGeometry height="114" width="240" x="280" y="280" as="geometry" />
@@ -108,8 +108,11 @@
         <mxCell id="5S2_NpsNCk4JiKRdSuAz-42" edge="1" parent="1" source="5S2_NpsNCk4JiKRdSuAz-40" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.999;entryY=-0.026;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="5S2_NpsNCk4JiKRdSuAz-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5S2_NpsNCk4JiKRdSuAz-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontStyle=1;fontSize=15;" value="Notes:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;These constraints define the rules and conditions that must be satisfied in the ESMS.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;They ensure data quality, security, and proper role-based access.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="130" width="380" x="-130" y="650" as="geometry" />
+        <mxCell id="5S2_NpsNCk4JiKRdSuAz-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontStyle=1;fontSize=15;" value="Notes:&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;These constraints define the rules and conditions that must be satisfied in the ESMS.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;They ensure data quality, security, and proper role-based access.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="680" x="-130" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="OmQs3YLiGtOXXMbk-Ilb-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Validation rules and constraints implemented within the application, including authentication checks and product data validation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="970" x="-50" y="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

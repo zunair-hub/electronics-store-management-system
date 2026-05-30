@@ -19,7 +19,7 @@ app.use("/api/products", productRoutes);
 
 
 app.get("/", (req, res) => {
-  res.send("Electronics Store Management Backend Running");
+  res.send("Electronics Store Management Backend Running...");
 });
 
 const PORT = process.env.PORT || 5001;
